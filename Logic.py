@@ -59,35 +59,6 @@ class Rules():
                     self.table[row][column+3] == self.table[row+2][column+1] and
                     self.table[row][column+3] == self.table[row+3][column]):
                     return True
-        # for column in range(self.column_count):
-        #     for row in range(self.row_count):
 
-        #         # print(f"Checking item {row}, {column}")
-
-        #         #Check upper left
-        #         # print(f"Checking upper left diagonal {row + 1}, {column - 1}")
-                
-        #         if row + 1 < self.row_count and column - 1 >= 0:
-        #             # print("Exist!")
-        #             if self.table[row + 1][column - 1] == self.token:
-        #                 token_diagonal += 1
-        #                 if token_diagonal == 4:
-        #                     return True
-        #             else:
-        #                 token_diagonal = 0
-
-
-        #         #Check upper right
-        #         # print(f"Checking upper right diagonal {row + 1}, {column + 1}")
-        #         if row + 1 < self.row_count and column + 1 < self.column_count:
-        #             # print("Exist!")
-        #             if self.table[row + 1][column + 1] == self.token:
-        #                 token_diagonal += 1
-        #                 print(f"token_diagonal upper right: {token_diagonal}")
-        #                 if token_diagonal == 4:
-        #                     return True
-        #             else:
-        #                 token_diagonal = 0
-        
         return False
         
